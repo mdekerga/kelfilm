@@ -1,4 +1,16 @@
 <div class="content">
-  <app-film-component></app-film-component>
-  <app-button></app-button>
+  <app-film-component
+    titre="Postman Blues"
+    [annee]="1997"
+    realisateur="SABU"
+    [duree]="110"
+  ></app-film-component>
+  <app-button texte="Démarrer"></app-button>
+
+  <app-movie-list></app-movie-list>
+
+  <footer>
+    <p>Data provided by</p>
+    <img src="img/logo.svg" />
+  </footer>
 </div>
