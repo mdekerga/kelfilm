@@ -1,0 +1,44 @@
+<form [formGroup]="myFormGroup" (submit)="save()">
+  <div>
+    <label for="genre">Genre</label>
+    <select id="genre" formControlName="genre">
+      @for(item of genres; track item){
+      <option [value]="item">{{ item }}</option>
+      }
+    </select>
+  </div>
+  <div>
+    <label for="duree"> Durée (en Min)</label>
+    <input
+      min="60"
+      max="320"
+      type="range"
+      name="duree"
+      id="duree"
+      formControlName="duree"
+      (input)="setDuree()"
+    />
+
+    <p id="duree_input"></p>
+  </div>
+
+  <div>
+    <label for="periode1"> Période</label>
+
+    <div class="periode_container">
+      <select id="periode1" formControlName="periode1">
+        @for(item of periode; track item){
+        <option [value]="item">{{ item }}</option>
+        }
+      </select>
+
+      <select id="periode2" formControlName="periode2">
+        @for(item of periode; track item){
+        <option [value]="item">{{ item }}</option>
+        }
+      </select>
+    </div>
+  </div>
+
+  <button type="submit">ENTRER</button>
+</form>

@@ -1,0 +1,36 @@
+form {
+  color: black;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: system-ui, -apple-system, Roboto, sans-serif;
+}
+
+form div {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #3b82f6; /* blue-500 */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.periode_container {
+  display: flex;
+}
